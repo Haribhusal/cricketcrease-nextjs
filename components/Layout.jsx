@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     return (
         <>
             <Header />
-            <main className="container mx-auto flex justify-between gap-5">
+            <main className="w-[90%] mx-auto flex justify-between gap-5">
                 <div className="content w-[70%]">
                     <CategoryMenu />
                     {children}

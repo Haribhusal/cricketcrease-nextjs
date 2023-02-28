@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className='bg-slate-800 text-white pt-10 pb-5'>
-            <div className="container mx-auto flex gap-5 items-start justify-between">
+            <div className="w-[90%] mx-auto flex gap-5 items-start justify-between">
                 <div className="item">
                     <h3 className="title font-bold mb-5">Categories</h3>
                     <ul className='text-sm flex flex-col gap-2'>
@@ -92,7 +92,7 @@ const Footer = () => {
 
             </div>
             <div className="bottom border-t-[1px] text-sm border-slate-700 pt-5 mt-5">
-                <div className="container mx-auto flex justify-between">
+                <div className="w-[90%] mx-auto flex justify-between">
                     <div className="credit">
 
                         &copy; CricketCrease.com - 2023, All Rights Reserved

@@ -8,7 +8,7 @@ import { MdLanguage } from 'react-icons/md'
 const Header = () => {
     return (
         <header className='shadow sticky top-0 z-50 bg-white'>
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="w-[90%] mx-auto flex justify-between items-center">
                 <Link href="/">
                     <div className="flex items-center ">
                         <Image src="/cricket-crease-logo.png" className='h-16 w-16' height={100} width={100} priority={true} alt="cricket-crease-logo" />
