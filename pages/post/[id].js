@@ -9,7 +9,7 @@ import ReactHtmlParser, {
 } from "react-html-parser";
 import Head from "next/head";
 
-const postDetailPage = () => {
+const PostDetailPage = () => {
   const dispatch = useDispatch();
   const router = useRouter();
   const { id } = router.query;
@@ -43,4 +43,4 @@ const postDetailPage = () => {
   );
 };
 
-export default postDetailPage;
+export default PostDetailPage;
