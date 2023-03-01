@@ -3,7 +3,7 @@ import React from 'react'
 
 const CategoryMenu = () => {
     return (
-        <nav className='border-b-[1px] border-slate-200 py-2 '>
+        <nav className='border-b-[1px] border-slate-200 py-2 sticky top-0 z-40 bg-white '>
             <ul className='text-sm capitalize text-slate-600 flex gap-5'>
                 <li>
                     <Link href={'/'}>Live Scores</Link>

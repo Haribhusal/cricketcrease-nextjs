@@ -5,9 +5,11 @@ import { BsFacebook } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
 import { MdLanguage } from 'react-icons/md'
+import { BsSearch } from 'react-icons/bs'
+import { HiBars3BottomRight } from 'react-icons/hi2'
 const Header = () => {
     return (
-        <header className='shadow sticky top-0 z-50 bg-white'>
+        <header className='shadow bg-white relative z-50'>
             <div className="w-[90%] mx-auto flex justify-between items-center">
                 <Link href="/">
                     <div className="flex items-center ">
@@ -18,6 +20,12 @@ const Header = () => {
                         </div>
                     </div>
                 </Link>
+                <form action="" className="flex relative">
+                    <input type="text" placeholder="Search Matches, Players" className="text-sm rounded-full w-[250px] border-[1px] border-gray-200 ring-0 outline-none px-5 py-2" />
+                    <button className="p-2 absolute right-2 top-0 h-[100%]">
+                        <BsSearch />
+                    </button>
+                </form>
                 <nav>
                     <ul className='text-sm capitalize text-slate-600 flex gap-5'>
                         <li>
@@ -34,9 +42,6 @@ const Header = () => {
                         </li>
                         <li>
                             <Link href={'/'}>Teams</Link>
-                        </li>
-                        <li>
-                            <Link href={'/'}>Cricket Nepal</Link>
                         </li>
                     </ul>
                 </nav>
@@ -58,6 +63,12 @@ const Header = () => {
 
                     <li>
                         <MdLanguage />
+                    </li>
+                    <div className="divider h-4 w-[1px] bg-slate-200"></div>
+
+                    <li>
+
+                        <HiBars3BottomRight />
                     </li>
 
                 </ul>

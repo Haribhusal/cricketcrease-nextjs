@@ -15,7 +15,7 @@ const Posts = () => {
     return (
         <div>
             {loading ? <p>Loading</p> : posts.map((post) => (
-                <Link href={`/post/${post.slug}`} className="text-slate-600" key={post.id} >
+                <Link href={`/post/${post.id}`} className="text-slate-600" key={post.id} >
                     <article className='flex justify-between border-[1px] border-gray-200 mt-5 rounded-md group overflow-hidden'>
                         <div className="info p-5 w-[80%]">
                             <span className="tag border-[1px] border-gray-200 text-red-700 text-[10px] px-3 py-1 rounded-sm">
