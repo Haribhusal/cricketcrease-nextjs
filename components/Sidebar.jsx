@@ -31,10 +31,8 @@ const Sidebar = () => {
         )
     }
 
-
-
     return (
-        <aside className=' p-5 bg-gray-100 sticky top-0 z-40'>
+        <aside className=' p-5 bg-gray-100 sticky top-0 z-40 h-screen'>
             <h3 className="title font-bold text-base text-slate-500">Recent Updates</h3>
             {loading ? <Skeleton wrapper={Box} count={20} /> : posts.slice(0, 10).map((post) => (
                 <Link href={`/post/${post.id}`} className="text-slate-600" key={post.id} >
