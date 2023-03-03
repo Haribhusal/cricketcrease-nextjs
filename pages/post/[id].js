@@ -32,10 +32,10 @@ const PostDetailPage = () => {
       </Head>
 
       <div className="py-10 single_post_detail_page">
-        <h1 className="text-4xl text-slate-600 font-bold mb-5 leading-snug">
+        <h1 className="text-4xl text-slate-600 dark:text-white font-bold mb-5 leading-snug">
           {singlePost[0]?.title.rendered}
         </h1>
-        <p className="text-slate-500 leading-relaxed">
+        <p className="text-slate-500 dark:text-white leading-relaxed">
           {ReactHtmlParser(singlePost[0]?.content?.rendered)}
         </p>
       </div>

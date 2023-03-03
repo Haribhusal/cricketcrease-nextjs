@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='bg-slate-800 text-white pt-10 pb-5'>
+        <footer className='bg-slate-800 dark:bg-slate-900 text-white pt-10 pb-5'>
             <div className="w-[90%] mx-auto flex gap-5 items-start justify-between">
                 <div className="item">
                     <h3 className="title font-bold mb-5">Categories</h3>

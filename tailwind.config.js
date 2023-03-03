@@ -1,11 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+// /** @type {import('@tailwindcss/typography').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        dark: {
+          css: {
+            color: "white",
+          },
+        },
+      }),
+    },
   },
-  plugins: [],
+  // plugins: [require("@tailwindcss/typography")],
+
+  darkMode: "class",
+
+  variants: {},
 };
