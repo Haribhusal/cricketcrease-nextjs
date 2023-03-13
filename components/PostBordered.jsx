@@ -26,12 +26,11 @@ const PostBordered = () => {
     return (
         <div>
             {loading ? <Skeleton wrapper={Box} count={5} /> : posts.map((post) => (
-                <Link href={`/post/${post.id}`} className="text-slate-600 dark:text-white" key={post.id} >
-                    <article className='flex justify-between border-b-[1px] dark:border-gray-900 group overflow-hidden mt-3 pb-3'>
+                <Link href={`/post/${post.id}`} className=" " key={post.id} >
+                    <article className='flex justify-between border-b-[1px] group overflow-hidden mt-3 pb-3'>
                         <div className="info w-[80%] pr-5">
-
                             <h1 className='group-hover:text-red-700 dark:text-white dark:group-hover:text-red-500 transition-all my-2 text-2xl font-semibold leading-normal'>{post.title.rendered || <Skeleton />}</h1>
-                            <p className="text-slate-500 text-sm dark:text-gray-400" >
+                            <p className=" text-sm dark:text-gray-400" >
                                 {ReactHtmlParser(post.acf.post_excerpt) || <Skeleton count={10} />}
                             </p>
                             <div className="meta flex justify-between items-center mt-3">

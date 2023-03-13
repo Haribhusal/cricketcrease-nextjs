@@ -15,3 +15,6 @@
 .react-loading-skeleton::after{
     animation: none !important;
 }
+li{
+    margin: 0;
+}

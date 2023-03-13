@@ -25,17 +25,40 @@ const PostDetailPage = () => {
 
   return (
     <>
+      <Image
+        src={post?.featured_image_urls?.medium[0]}
+        alt={post.title.rendered}
+        className=" overflow-hidden w-[20%] group-hover:scale-105 transition-all  object-cover rounded-sm bg-gray-200"
+        height={300}
+        width={300}
+      />
+      {/*  */}
       <Head>
         <title>{singlePost[0]?.title.rendered}</title>
         <meta name="description" content={singlePost[0]?.excerpt.rendered} />
         <link rel="icon" href="/cricket-crease-logo.png" />
+        <meta
+          property="og:image"
+          content={singlePost[0]?.featured_image_urls?.medium[0]}
+        />
+
+        <meta property="og:title" content={singlePost[0]?.title.rendered} />
+
+        <meta
+          property="og:description"
+          content={ReactHtmlParser(singlePost[0].acf.post_excerpt)}
+        />
+
+        <meta property="og:image:width" content="500" />
+
+        <meta property="og:image:height" content="400" />
       </Head>
 
       <div className="py-10 single_post_detail_page">
-        <h1 className="text-4xl text-slate-600 dark:text-white font-bold mb-5 leading-snug">
+        <h1 className="text-4xl font-bold mb-5 leading-snug">
           {singlePost[0]?.title.rendered}
         </h1>
-        <p className="text-slate-500 dark:text-white leading-relaxed">
+        <p className="leading-relaxed">
           {ReactHtmlParser(singlePost[0]?.content?.rendered)}
         </p>
       </div>
