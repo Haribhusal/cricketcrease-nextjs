@@ -8,6 +8,7 @@ import ReactHtmlParser, {
   htmlparser2,
 } from "react-html-parser";
 import Head from "next/head";
+import Image from "next/image";
 
 const PostDetailPage = () => {
   const dispatch = useDispatch();
@@ -25,14 +26,6 @@ const PostDetailPage = () => {
 
   return (
     <>
-      <Image
-        src={post?.featured_image_urls?.medium[0]}
-        alt={post.title.rendered}
-        className=" overflow-hidden w-[20%] group-hover:scale-105 transition-all  object-cover rounded-sm bg-gray-200"
-        height={300}
-        width={300}
-      />
-      {/*  */}
       <Head>
         <title>{singlePost[0]?.title.rendered}</title>
         <meta name="description" content={singlePost[0]?.excerpt.rendered} />
